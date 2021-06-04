@@ -1,0 +1,83 @@
+.TranslationInspectorTooltip {
+    position: fixed;
+    z-index: 1000;
+    bottom: 20px;
+    right: 20px;
+    background: @hero-bg;
+    color: @hero-color;
+    padding: 15px;
+    padding-left: 60px;
+    border: 2px solid @hero-color;
+    border-radius: @border-radius;
+
+    .icon {
+        position: absolute;
+        font-size: 30px;
+        left: 15px;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+}
+
+.TranslationInspectorText {
+    background: #eee;
+    cursor: pointer;
+
+    &:hover {
+        background: yellow;
+    }
+}
+
+.TranslationInspectorModal {
+    dl {
+        margin: 0 0 20px;
+        padding: 0;
+    }
+
+    dt {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+
+    dd {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.TranslationInspectorExtensionIcon {
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-top: 5px;
+
+    .icon {
+        display: block;
+        text-align: center;
+        margin-top: 8px;
+    }
+}
+
+.TranslationInspectorExtensionTitle {
+    display: block;
+    font-weight: bold;
+}
+
+.TranslationInspectorKey,
+.TranslationInspectorPath {
+    dd {
+        font-family: monospace;
+    }
+}
+
+.TranslationInspectorEditButton {
+    .Button--color(@body-bg, @primary-color);
+}
